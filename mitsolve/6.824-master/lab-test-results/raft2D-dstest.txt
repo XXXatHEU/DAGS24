@@ -1,0 +1,64 @@
+Run as `./dstest -p50 -n16 -l -g2 -m256 -ff -pa 2D`
+
+Running with 50 workers / 8 CPU cores available
+Running on CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Running with go version go1.17.6 linux/amd64
+Running with verbosity level: 1
+
+Initial iterations: 16
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                            ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotBasic2D             │      0 │    16 │  5.16 ± 1.12 │
+│ TestSnapshotInstall2D           │      0 │    16 │ 44.93 ± 1.72 │
+│ TestSnapshotInstallUnreliable2D │      0 │    16 │ 51.15 ± 2.64 │
+│ TestSnapshotInstallCrash2D      │      0 │    16 │ 34.48 ± 1.36 │
+│ TestSnapshotInstallUnCrash2D    │      0 │    16 │ 43.06 ± 4.12 │
+│ TestSnapshotAllCrash2D          │      0 │    16 │  7.77 ± 1.31 │
+└─────────────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 32
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                            ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotBasic2D             │      0 │    32 │  4.59 ± 0.94 │
+│ TestSnapshotInstall2D           │      0 │    32 │ 43.98 ± 2.17 │
+│ TestSnapshotInstallUnreliable2D │      0 │    32 │ 51.31 ± 2.53 │
+│ TestSnapshotInstallCrash2D      │      0 │    32 │ 34.14 ± 1.12 │
+│ TestSnapshotInstallUnCrash2D    │      0 │    32 │ 42.33 ± 3.34 │
+│ TestSnapshotAllCrash2D          │      0 │    32 │  7.52 ± 1.30 │
+└─────────────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 64
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                            ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotBasic2D             │      0 │    64 │  4.27 ± 0.82 │
+│ TestSnapshotInstall2D           │      0 │    64 │ 43.56 ± 1.26 │
+│ TestSnapshotInstallUnreliable2D │      0 │    64 │ 50.17 ± 2.56 │
+│ TestSnapshotInstallCrash2D      │      0 │    64 │ 33.80 ± 1.07 │
+│ TestSnapshotInstallUnCrash2D    │      0 │    64 │ 41.67 ± 2.91 │
+│ TestSnapshotAllCrash2D          │      0 │    64 │  7.11 ± 0.99 │
+└─────────────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 128
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                            ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotBasic2D             │      0 │   128 │  4.12 ± 0.59 │
+│ TestSnapshotInstall2D           │      0 │   128 │ 43.53 ± 1.64 │
+│ TestSnapshotInstallUnreliable2D │      0 │   128 │ 49.96 ± 2.85 │
+│ TestSnapshotInstallCrash2D      │      0 │   128 │ 33.53 ± 0.86 │
+│ TestSnapshotInstallUnCrash2D    │      0 │   128 │ 41.30 ± 2.43 │
+│ TestSnapshotAllCrash2D          │      0 │   128 │  7.11 ± 0.90 │
+└─────────────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 256
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                            ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotBasic2D             │      0 │   256 │  4.03 ± 0.44 │
+│ TestSnapshotInstall2D           │      0 │   256 │ 43.24 ± 1.45 │
+│ TestSnapshotInstallUnreliable2D │      0 │   256 │ 49.65 ± 2.36 │
+│ TestSnapshotInstallCrash2D      │      0 │   256 │ 33.49 ± 0.74 │
+│ TestSnapshotInstallUnCrash2D    │      0 │   256 │ 41.60 ± 2.61 │
+│ TestSnapshotAllCrash2D          │      0 │   256 │  6.87 ± 0.79 │
+└─────────────────────────────────┴────────┴───────┴──────────────┘
+
+Completed 496 iterations in total

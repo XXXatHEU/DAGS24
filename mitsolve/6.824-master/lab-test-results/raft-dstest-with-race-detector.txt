@@ -1,0 +1,43 @@
+With modification: relax config.go checkTimeout from 2 minutes to 10 minutes,
+to avoid timeout when running with race detection
+--------------------------------------------------------------------------------
+Run as `./dstest -p24 -n128 -r -pa 2A,2B,2C,2D`
+
+Running with the race detector
+Running with 24 workers / 8 CPU cores available
+Running on CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Running with go version go1.17.6 linux/amd64
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                            ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestInitialElection2A           │      0 │   128 │  3.73 ± 0.32 │
+│ TestReElection2A                │      0 │   128 │  6.17 ± 0.41 │
+│ TestManyElections2A             │      0 │   128 │  7.62 ± 0.80 │
+│ TestBasicAgree2B                │      0 │   128 │  0.95 ± 0.29 │
+│ TestRPCBytes2B                  │      0 │   128 │  1.76 ± 0.31 │
+│ TestFollowerFailure2B           │      0 │   128 │  4.93 ± 0.33 │
+│ TestLeaderFailure2B             │      0 │   128 │  5.87 ± 0.35 │
+│ TestFailAgree2B                 │      0 │   128 │  5.55 ± 0.48 │
+│ TestFailNoAgree2B               │      0 │   128 │  4.21 ± 0.37 │
+│ TestConcurrentStarts2B          │      0 │   128 │  1.11 ± 0.29 │
+│ TestRejoin2B                    │      0 │   128 │  5.88 ± 1.04 │
+│ TestBackup2B                    │      0 │   128 │ 16.45 ± 1.05 │
+│ TestCount2B                     │      0 │   128 │  2.65 ± 0.34 │
+│ TestPersist12C                  │      0 │   128 │  4.14 ± 0.43 │
+│ TestPersist22C                  │      0 │   128 │ 16.96 ± 1.11 │
+│ TestPersist32C                  │      0 │   128 │  1.76 ± 0.36 │
+│ TestFigure82C                   │      0 │   128 │ 31.94 ± 2.92 │
+│ TestUnreliableAgree2C           │      0 │   128 │  2.95 ± 0.50 │
+│ TestFigure8Unreliable2C         │      0 │   128 │ 41.82 ± 3.55 │
+│ TestReliableChurn2C             │      0 │   128 │ 17.03 ± 0.35 │
+│ TestUnreliableChurn2C           │      0 │   128 │ 17.07 ± 0.33 │
+│ TestSnapshotBasic2D             │      0 │   128 │  4.52 ± 0.32 │
+│ TestSnapshotInstall2D           │      0 │   128 │ 44.11 ± 1.42 │
+│ TestSnapshotInstallUnreliable2D │      0 │   128 │ 50.42 ± 2.54 │
+│ TestSnapshotInstallCrash2D      │      0 │   128 │ 34.34 ± 0.91 │
+│ TestSnapshotInstallUnCrash2D    │      0 │   128 │ 42.10 ± 2.41 │
+│ TestSnapshotAllCrash2D          │      0 │   128 │  7.31 ± 0.74 │
+└─────────────────────────────────┴────────┴───────┴──────────────┘
+
+Completed 128 iterations in total

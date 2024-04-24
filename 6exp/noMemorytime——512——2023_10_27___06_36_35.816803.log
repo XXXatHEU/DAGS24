@@ -1,0 +1,14 @@
+======时间汇总====================================
+BTQueryWithKeywordAttributes函数运行时间：8h17m46.927731969s
+MHQueryWithKeywordAttributes函数运行时间：5m14.739813688s
+GraphQueryWithKeywordAttributes函数运行时间：3m2.866233537s
+BTGetBlocksInTimeRange函数运行时间：53.853754ms
+MHGetBlocksInTimeRange函数运行时间：33.945892ms
+GraphGetBlocksInTimeRange函数运行时间：36.48994ms
+BTGetsocuid函数运行时间：1h45m32.799832955s
+MHGetsocuid函数运行时间：3m14.591055705s
+GraphGetsocuid函数运行时间：3m6.286847027s
+BThaveid函数运行时间：7m27.176163756s
+MHhaveid函数运行时间：3m59.79218839s
+Graphhaveid函数运行时间：3m0.380822416s
+==============================================

@@ -1,0 +1,1 @@
+../7server/DposGlobalType.go

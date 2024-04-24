@@ -1,0 +1,40 @@
+Run as `./dstest -p24 -n128 -l -g2 -m1024 -ff -ts TestChallenge1Delete,TestChallenge2Unaffected,TestChallenge2Partial`
+
+Running with 24 workers / 8 CPU cores available
+Running on CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Running with go version go1.17.6 linux/amd64
+
+Initial iterations: 128
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                     ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestChallenge1Delete     │      0 │   128 │ 15.73 ± 0.38 │
+│ TestChallenge2Unaffected │      0 │   128 │  5.12 ± 0.72 │
+│ TestChallenge2Partial    │      0 │   128 │  4.44 ± 0.66 │
+└──────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 256
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                     ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestChallenge1Delete     │      0 │   256 │ 15.68 ± 0.24 │
+│ TestChallenge2Unaffected │      0 │   256 │  5.06 ± 0.66 │
+│ TestChallenge2Partial    │      0 │   256 │  4.42 ± 0.64 │
+└──────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 512
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                     ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestChallenge1Delete     │      0 │   512 │ 15.66 ± 0.20 │
+│ TestChallenge2Unaffected │      0 │   512 │  5.10 ± 0.65 │
+│ TestChallenge2Partial    │      0 │   512 │  4.37 ± 0.53 │
+└──────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 1024
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                     ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestChallenge1Delete     │      0 │  1024 │ 15.64 ± 0.16 │
+│ TestChallenge2Unaffected │      0 │  1024 │  5.02 ± 0.62 │
+│ TestChallenge2Partial    │      0 │  1024 │  4.34 ± 0.54 │
+└──────────────────────────┴────────┴───────┴──────────────┘
+
+Completed 1920 iterations in total

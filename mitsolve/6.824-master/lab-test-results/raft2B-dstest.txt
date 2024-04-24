@@ -1,0 +1,84 @@
+Run as `./dstest -p50 -n16 -l -g2 -m256 -ff -pa 2B`
+
+Running with 50 workers / 8 CPU cores available
+Running on CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Running with go version go1.17.6 linux/amd64
+Running with verbosity level: 1
+
+Initial iterations: 16
+┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                   ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestBasicAgree2B       │      0 │    16 │  1.60 ± 1.09 │
+│ TestRPCBytes2B         │      0 │    16 │  2.41 ± 1.11 │
+│ TestFollowerFailure2B  │      0 │    16 │  5.55 ± 1.09 │
+│ TestLeaderFailure2B    │      0 │    16 │  6.43 ± 0.98 │
+│ TestFailAgree2B        │      0 │    16 │  6.32 ± 1.07 │
+│ TestFailNoAgree2B      │      0 │    16 │  4.83 ± 1.01 │
+│ TestConcurrentStarts2B │      0 │    16 │  1.74 ± 1.09 │
+│ TestRejoin2B           │      0 │    16 │  6.54 ± 1.42 │
+│ TestBackup2B           │      0 │    16 │ 16.40 ± 1.90 │
+│ TestCount2B            │      0 │    16 │  3.19 ± 1.06 │
+└────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 32
+┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                   ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestBasicAgree2B       │      0 │    32 │  1.16 ± 0.76 │
+│ TestRPCBytes2B         │      0 │    32 │  1.96 ± 0.79 │
+│ TestFollowerFailure2B  │      0 │    32 │  5.05 ± 0.79 │
+│ TestLeaderFailure2B    │      0 │    32 │  5.96 ± 0.83 │
+│ TestFailAgree2B        │      0 │    32 │  5.95 ± 0.85 │
+│ TestFailNoAgree2B      │      0 │    32 │  4.30 ± 0.82 │
+│ TestConcurrentStarts2B │      0 │    32 │  1.29 ± 0.79 │
+│ TestRejoin2B           │      0 │    32 │  5.78 ± 1.17 │
+│ TestBackup2B           │      0 │    32 │ 16.13 ± 1.25 │
+│ TestCount2B            │      0 │    32 │  2.77 ± 0.75 │
+└────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 64
+┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                   ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestBasicAgree2B       │      0 │    64 │  0.98 ± 0.68 │
+│ TestRPCBytes2B         │      0 │    64 │  1.75 ± 0.65 │
+│ TestFollowerFailure2B  │      0 │    64 │  4.87 ± 0.69 │
+│ TestLeaderFailure2B    │      0 │    64 │  5.80 ± 0.66 │
+│ TestFailAgree2B        │      0 │    64 │  5.69 ± 0.72 │
+│ TestFailNoAgree2B      │      0 │    64 │  4.17 ± 0.66 │
+│ TestConcurrentStarts2B │      0 │    64 │  1.11 ± 0.63 │
+│ TestRejoin2B           │      0 │    64 │  5.79 ± 1.08 │
+│ TestBackup2B           │      0 │    64 │ 16.32 ± 1.25 │
+│ TestCount2B            │      0 │    64 │  2.62 ± 0.65 │
+└────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 128
+┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                   ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestBasicAgree2B       │      0 │   128 │  0.89 ± 0.46 │
+│ TestRPCBytes2B         │      0 │   128 │  1.67 ± 0.45 │
+│ TestFollowerFailure2B  │      0 │   128 │  4.79 ± 0.44 │
+│ TestLeaderFailure2B    │      0 │   128 │  5.74 ± 0.47 │
+│ TestFailAgree2B        │      0 │   128 │  5.58 ± 0.48 │
+│ TestFailNoAgree2B      │      0 │   128 │  4.09 ± 0.52 │
+│ TestConcurrentStarts2B │      0 │   128 │  1.05 ± 0.44 │
+│ TestRejoin2B           │      0 │   128 │  5.87 ± 1.09 │
+│ TestBackup2B           │      0 │   128 │ 16.14 ± 1.10 │
+│ TestCount2B            │      0 │   128 │  2.55 ± 0.40 │
+└────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 256
+┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                   ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestBasicAgree2B       │      0 │   256 │  0.87 ± 0.41 │
+│ TestRPCBytes2B         │      0 │   256 │  1.66 ± 0.39 │
+│ TestFollowerFailure2B  │      0 │   256 │  4.76 ± 0.38 │
+│ TestLeaderFailure2B    │      0 │   256 │  5.70 ± 0.43 │
+│ TestFailAgree2B        │      0 │   256 │  5.58 ± 0.53 │
+│ TestFailNoAgree2B      │      0 │   256 │  4.07 ± 0.48 │
+│ TestConcurrentStarts2B │      0 │   256 │  1.03 ± 0.39 │
+│ TestRejoin2B           │      0 │   256 │  5.98 ± 1.05 │
+│ TestBackup2B           │      0 │   256 │ 16.07 ± 1.08 │
+│ TestCount2B            │      0 │   256 │  2.54 ± 0.39 │
+└────────────────────────┴────────┴───────┴──────────────┘
+
+Completed 496 iterations in total

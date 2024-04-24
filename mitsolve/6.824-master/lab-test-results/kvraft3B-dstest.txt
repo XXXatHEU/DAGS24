@@ -1,0 +1,78 @@
+Run as `./dstest -p24 -n16 -l -g2 -m256 -ff -pa 3B`
+
+Running with 24 workers / 8 CPU cores available
+Running on CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Running with go version go1.17.6 linux/amd64
+
+Initial iterations: 16
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                                                           ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotRPC3B                                              │      0 │    16 │  3.89 ± 0.52 │
+│ TestSnapshotSize3B                                             │      0 │    16 │  2.37 ± 0.30 │
+│ TestSpeed3B                                                    │      0 │    16 │  2.44 ± 0.46 │
+│ TestSnapshotRecover3B                                          │      0 │    16 │ 19.69 ± 0.37 │
+│ TestSnapshotRecoverManyClients3B                               │      0 │    16 │ 19.96 ± 0.58 │
+│ TestSnapshotUnreliable3B                                       │      0 │    16 │ 17.32 ± 0.33 │
+│ TestSnapshotUnreliableRecover3B                                │      0 │    16 │ 21.07 ± 0.56 │
+│ TestSnapshotUnreliableRecoverConcurrentPartition3B             │      0 │    16 │ 27.84 ± 0.28 │
+│ TestSnapshotUnreliableRecoverConcurrentPartitionLinearizable3B │      0 │    16 │ 29.99 ± 0.59 │
+└────────────────────────────────────────────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 32
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                                                           ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotRPC3B                                              │      0 │    32 │  4.01 ± 0.53 │
+│ TestSnapshotSize3B                                             │      0 │    32 │  2.24 ± 0.30 │
+│ TestSpeed3B                                                    │      0 │    32 │  2.38 ± 0.47 │
+│ TestSnapshotRecover3B                                          │      0 │    32 │ 19.53 ± 0.39 │
+│ TestSnapshotRecoverManyClients3B                               │      0 │    32 │ 19.99 ± 0.65 │
+│ TestSnapshotUnreliable3B                                       │      0 │    32 │ 17.31 ± 0.37 │
+│ TestSnapshotUnreliableRecover3B                                │      0 │    32 │ 21.19 ± 0.59 │
+│ TestSnapshotUnreliableRecoverConcurrentPartition3B             │      0 │    32 │ 28.21 ± 0.65 │
+│ TestSnapshotUnreliableRecoverConcurrentPartitionLinearizable3B │      0 │    32 │ 30.10 ± 0.83 │
+└────────────────────────────────────────────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 64
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                                                           ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotRPC3B                                              │      0 │    64 │  4.00 ± 0.75 │
+│ TestSnapshotSize3B                                             │      0 │    64 │  2.26 ± 0.32 │
+│ TestSpeed3B                                                    │      0 │    64 │  2.31 ± 0.38 │
+│ TestSnapshotRecover3B                                          │      0 │    64 │ 19.60 ± 0.42 │
+│ TestSnapshotRecoverManyClients3B                               │      0 │    64 │ 19.90 ± 0.48 │
+│ TestSnapshotUnreliable3B                                       │      0 │    64 │ 17.23 ± 0.36 │
+│ TestSnapshotUnreliableRecover3B                                │      0 │    64 │ 21.12 ± 0.63 │
+│ TestSnapshotUnreliableRecoverConcurrentPartition3B             │      0 │    64 │ 28.20 ± 0.56 │
+│ TestSnapshotUnreliableRecoverConcurrentPartitionLinearizable3B │      0 │    64 │ 30.05 ± 0.50 │
+└────────────────────────────────────────────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 128
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                                                           ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotRPC3B                                              │      0 │   128 │  4.04 ± 0.64 │
+│ TestSnapshotSize3B                                             │      0 │   128 │  2.26 ± 0.31 │
+│ TestSpeed3B                                                    │      0 │   128 │  2.26 ± 0.34 │
+│ TestSnapshotRecover3B                                          │      0 │   128 │ 19.54 ± 0.34 │
+│ TestSnapshotRecoverManyClients3B                               │      0 │   128 │ 19.71 ± 0.41 │
+│ TestSnapshotUnreliable3B                                       │      0 │   128 │ 17.22 ± 0.45 │
+│ TestSnapshotUnreliableRecover3B                                │      0 │   128 │ 21.01 ± 0.50 │
+│ TestSnapshotUnreliableRecoverConcurrentPartition3B             │      0 │   128 │ 28.19 ± 0.45 │
+│ TestSnapshotUnreliableRecoverConcurrentPartitionLinearizable3B │      0 │   128 │ 30.04 ± 0.59 │
+└────────────────────────────────────────────────────────────────┴────────┴───────┴──────────────┘
+Increasing iterations to 256
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Test                                                           ┃ Failed ┃ Total ┃         Time ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│ TestSnapshotRPC3B                                              │      0 │   256 │  4.14 ± 0.62 │
+│ TestSnapshotSize3B                                             │      0 │   256 │  2.25 ± 0.28 │
+│ TestSpeed3B                                                    │      0 │   256 │  2.20 ± 0.35 │
+│ TestSnapshotRecover3B                                          │      0 │   256 │ 19.46 ± 0.34 │
+│ TestSnapshotRecoverManyClients3B                               │      0 │   256 │ 19.74 ± 0.45 │
+│ TestSnapshotUnreliable3B                                       │      0 │   256 │ 17.22 ± 0.39 │
+│ TestSnapshotUnreliableRecover3B                                │      0 │   256 │ 21.04 ± 0.49 │
+│ TestSnapshotUnreliableRecoverConcurrentPartition3B             │      0 │   256 │ 28.23 ± 0.59 │
+│ TestSnapshotUnreliableRecoverConcurrentPartitionLinearizable3B │      0 │   256 │ 30.01 ± 0.59 │
+└────────────────────────────────────────────────────────────────┴────────┴───────┴──────────────┘
+
+Completed 496 iterations in total

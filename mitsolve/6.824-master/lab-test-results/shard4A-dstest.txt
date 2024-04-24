@@ -1,0 +1,36 @@
+Run as `./dstest -p24 -n128 -l -g2 -m1024 -ff -ts TestBasic,TestMulti`
+
+Running with 24 workers / 8 CPU cores available
+Running on CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Running with go version go1.17.6 linux/amd64
+
+Initial iterations: 128
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┓
+┃ Test      ┃ Failed ┃ Total ┃        Time ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━┩
+│ TestBasic │      0 │   128 │ 2.91 ± 0.56 │
+│ TestMulti │      0 │   128 │ 1.52 ± 0.34 │
+└───────────┴────────┴───────┴─────────────┘
+Increasing iterations to 256
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┓
+┃ Test      ┃ Failed ┃ Total ┃        Time ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━┩
+│ TestBasic │      0 │   256 │ 2.90 ± 0.52 │
+│ TestMulti │      0 │   256 │ 1.49 ± 0.28 │
+└───────────┴────────┴───────┴─────────────┘
+Increasing iterations to 512
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┓
+┃ Test      ┃ Failed ┃ Total ┃        Time ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━┩
+│ TestBasic │      0 │   512 │ 2.90 ± 0.51 │
+│ TestMulti │      0 │   512 │ 1.51 ± 0.22 │
+└───────────┴────────┴───────┴─────────────┘
+Increasing iterations to 1024
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┓
+┃ Test      ┃ Failed ┃ Total ┃        Time ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━┩
+│ TestBasic │      0 │  1024 │ 2.92 ± 0.51 │
+│ TestMulti │      0 │  1024 │ 1.51 ± 0.19 │
+└───────────┴────────┴───────┴─────────────┘
+
+Completed 1920 iterations in total

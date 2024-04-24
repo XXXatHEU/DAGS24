@@ -1,0 +1,17 @@
+加载到内存的模式
+加载入内存共用时间:2m4.662193477s
+======时间汇总====================================
+/home/kz/128/blockchain.db
+BTQueryWithKeywordAttributesMemory函数运行时间：35.02680492s
+MHQueryWithKeywordAttributesMemory函数运行时间：257.750107ms
+GraphQueryWithKeywordAttributesMemory函数运行时间：23.677307ms
+BTGetBlocksInTimeRangeMemory函数运行时间：5.040034ms
+MHGetBlocksInTimeRangeMemory函数运行时间：5.973592ms
+GraphGetBlocksInTimeRangeMemory函数运行时间：3.948098ms
+BTGetsocuidMemory函数运行时间：521.861413ms
+MHGetsocuidMemory函数运行时间：33.314561ms
+GraphGetsocuidMemory函数运行时间：4.759825ms
+BThaveidMemory函数运行时间：1.876465282s
+MHhaveidMemory函数运行时间：622.251603ms
+GraphhaveidMemory函数运行时间：98.255852ms
+==============================================
