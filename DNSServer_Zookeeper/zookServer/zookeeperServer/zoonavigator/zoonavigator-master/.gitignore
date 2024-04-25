@@ -1,0 +1,27 @@
+build/snap/local/extra/
+build/snap/local/lib/
+build/snap/*.snap
+.metals/
+
+.sass-cache/
+_site/
+docs/_build/
+
+### JetBrains template
+*.iws
+
+# IntelliJ
+/.idea
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
