@@ -1,3 +1,7 @@
+历史版本过程记录 
+
+[马达哒哒哒/kzworkplace (gitee.com)](https://gitee.com/zheshu/kzworkplace)
+
 # 环境配置
 
 ### 1.1 go环境问题
