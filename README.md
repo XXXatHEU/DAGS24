@@ -1,6 +1,4 @@
-历史版本过程记录 
 
-[马达哒哒哒/kzworkplace (gitee.com)](https://gitee.com/zheshu/kzworkplace)
 
 # 环境配置
 
@@ -170,6 +168,9 @@ client中运行脚本69.sh ，脚本中将同时创建指定数量的进程节�
 
 
 # 其他一些过程记录
+历史版本过程记录 
+
+[马达哒哒哒/kzworkplace (gitee.com)](https://gitee.com/zheshu/kzworkplace)
 
 挖矿控制协程思想
 
